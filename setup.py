@@ -6,9 +6,9 @@
 from setuptools import find_packages, setup
 
 with open("README.md", "r", encoding="utf-8") as fh:
-   long_description = fh.read()
+    long_description = fh.read()
 
-setup(    
+setup(
     name="bennie_bash",
     author="O Hung Lun",
     author_email="hunglun.o@gmail.com",
@@ -16,8 +16,8 @@ setup(
     maintainer_email="hunglun.o@gmail.com",
     version="0.1.0",
     url="https://github.com/hunglun/bennie_bash",
-    download_url='https://github.com/hunglun/bennie_bash',
-    keywords=['bash','BennieBash'],
+    download_url="https://github.com/hunglun/bennie_bash",
+    keywords=["bash", "BennieBash"],
     license="GNU",
     description="Personal Bash Shell",
     long_description=long_description,
@@ -29,17 +29,19 @@ setup(
     packages=find_packages(),
     include_package_data=True,
     install_requires=[
-        'pytest',
+        "pytest",
     ],
     classifiers=[
-        'Environment :: Console',
-        'Intended Audience :: Developers',
-        'Operating System :: POSIX :: Linux',
-        'Programming Language :: Python :: 3'],
+        "Environment :: Console",
+        "Intended Audience :: Developers",
+        "Operating System :: POSIX :: Linux",
+        "Programming Language :: Python :: 3",
+    ],
     entry_points={
-        'console_scripts': [
-            'bennie_bash = bennie_bash.__main__:main',
-        ]},
-    setup_requires=['pytest-runner'],
-    tests_require=['pytest'],
+        "console_scripts": [
+            "bennie_bash = bennie_bash.__main__:main",
+        ]
+    },
+    setup_requires=["pytest-runner"],
+    tests_require=["pytest"],
 )
